@@ -45,7 +45,7 @@ CREATE TABLE Aggregation
 **/
 
 -- Author
-INSERT INTO Author VALUES('A0037','dr. md. meganur rahman','EEE,Professor','mizan.eee@aust.edu');
+INSERT INTO Author VALUES('A0037','dr. md. meganur rahman','EEE','Professor','mizan.eee@aust.edu');
 INSERT INTO Author VALUES('A0038','dr. bobby barua','EEE','Professor','bobby@aust.edu');
 INSERT INTO Author VALUES('A0039','jamal uddin ahmed','EEE','Associate Professor','jua.eee@aust.edu');
 INSERT INTO Author VALUES('A0040','dr. omar farrok','EEE','Professor','omar.eee@aust.edu');
@@ -69,7 +69,7 @@ INSERT INTO Papers VALUES('P0008','esharagan: an approach to generate disentangl
 INSERT INTO Papers VALUES('P0009','efficient feature selection for detecting botnets based on network traffic and behavior analysis','10.1145/3428363.3428378','Conference','ACM','CSE');
 INSERT INTO Papers VALUES('P0010','a neural network based approach for recognition of basic emotions from speech','10.1109/TENSYMP50017.2020.9230641','Conference','IEEE','CSE');
 INSERT INTO Papers VALUES('P0011','credit card fraud detection using data pre-processing on imbalanced data - both oversampling and undersampling','10.1145/3377049.3377113','Conference','ACM','CSE');
-INSERT INTO Papers VALUES('P0012','hybrid text summarizer for bangla document',,'Journal','IJCVSP','CSE');
+INSERT INTO Papers VALUES('P0012','hybrid text summarizer for bangla document','','Journal','IJCVSP','CSE');
 INSERT INTO Papers VALUES('P0013','predicting behavior trends among students based on personality traits','10.1145/3377049.3377068','Conference','ACM','CSE');
 INSERT INTO Papers VALUES('P0014','prediction of lung cancer patients survival time using regression analysis and image processing techniques','10.5120/ijca2020920409','Journal','IJCA','CSE');
 INSERT INTO Papers VALUES('P0015','an empirical study on stack overflow security vulnerability in well-known open source software systems','10.5120/ijca2020920492','Journal','IJCA','CSE');
