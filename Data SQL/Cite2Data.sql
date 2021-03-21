@@ -1,4 +1,3 @@
-SET SERVEROUTPUT ON;
 clear screen;
 
 --delete existing table

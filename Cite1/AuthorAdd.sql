@@ -5,7 +5,7 @@ clear screen;
 
 BEGIN
     DBMS_OUTPUT.PUT_LINE('Provide Appropriate Entries');
-    DBMS_OUTPUT.PUT_LINE('You can keep entries empty. Just press enter');
+    DBMS_OUTPUT.PUT_LINE('No entries should be kept empty');
 END;
 /
 
@@ -15,28 +15,27 @@ ACCEPT S CHAR PROMPT 'Designation = '
 ACCEPT T CHAR PROMPT 'Email Address = '
 
 DECLARE
+    aIDNo Author.AuthorID%TYPE;
     aName Author.AuthorName%TYPE;
     aDept Author.Department%TYPE;
     aDesg Author.Designation%TYPE;
     aMail Author.EmailAddress%TYPE;
     aNum Number;
-    aException Exception;
 BEGIN
     aName := '&P';
     aDept := '&Q';
     aDesg := '&S';
     aMail := '&T';
 
-    aNum := SuppPublicationCnt.cntRows(aName, aDept, aDesg, aMail);
-    IF aNum = 0 THEN
-        RAISE aException;
+    SELECT COUNT(*) INTO aNum FROM DataAuthor;
+    aIDNo := 'A' || TO_CHAR(aNum + 1);
+
+    IF aDept = 'CSE' THEN
+        INSERT INTO Author@Cite2 VALUES(aIDNo, aName, aDept, aDesg, aMail);
     ELSE
-        DBMS_OUTPUT.PUT_LINE('A Total of ' || aNum || ' Entries Matched with Given Values:');
-        SuppPublicationCnt.printValues(aName, aDept, aDesg, aMail);
+        INSERT INTO Author VALUES(aIDNo, aName, aDept, aDesg, aMail);
     END IF;
 
-EXCEPTION
-    WHEN aException THEN
-        DBMS_OUTPUT.PUT_LINE('No Entries Matched for the Given Input.');
+    commit;
 END;
 /
