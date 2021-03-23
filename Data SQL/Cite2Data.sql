@@ -84,7 +84,7 @@ INSERT INTO Author VALUES('A0036','mohammad marufur rahman','CSE','Lecturer','ma
 
 -- Papers
 INSERT INTO Papers VALUES('P0033','bandgap tuning of samarium and cobalt co-doped bismuth ferrite nanoparticles','10.1016/j.mseb.2020.114842','Journal','Elsevier','EEE');
-INSERT INTO Papers VALUES('P0034','analytical performance evaluation of coherent detection optical receiver over direct detection in ofdm wireless optical communication system under turbulent condition','10.37591/toeoc.v10i1.3909','Journal','Trends in Opto-Electro & Optical Communications','EEE');
+INSERT INTO Papers VALUES('P0034','analytical performance evaluation of coherent detection optical receiver over direct detection in ofdm wireless optical communication system under turbulent condition','10.37591/toeoc.v10i1.3909','Journal','Trends in Opto-Electro and Optical Communications','EEE');
 INSERT INTO Papers VALUES('P0035','simultaneous computation of arithmetic logic operation based on polarized optical shadow casting method','10.1109/ICAICT51780.2020.9333471','Conference','IEEE','EEE');
 INSERT INTO Papers VALUES('P0036','enhanced electrical conductivity and multiferroic property of cobalt-doped bismuth ferrite nanoparticles','10.1007/s10854-020-03407-6','Journal','Springer','EEE');
 INSERT INTO Papers VALUES('P0037','proton exchange membrane hydrogen fuel cell as the grid connected power generator','10.3390/en13246679','Journal','Energies','EEE');
